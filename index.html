@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Annotation Guidelines</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #7c4dff;
+            --card-bg: #1e1e1e;
+            --highlight: #303030;
+            --border: #2c2c2c;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .guidelines {
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+        
+        .note {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        ol {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 1rem;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .image-item {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .image-item img {
+            width: 100%;
+            display: block;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            color: #888;
+        }
+        
+        .credit {
+            font-style: italic;
+            color: #aaa;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0.75rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .image-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 0.75rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .image-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/montserrat/6.2.1/css.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Annotation Guidelines</h1>
+            <p>Reference guide for facial feature annotations</p>
+        </header>
+        
+        <section class="guidelines">
+            <h2>Annotation Notes</h2>
+            <div class="note">
+                <p>Please follow these notes carefully when annotating images:</p>
+            </div>
+            
+            <ol>
+                <li>Even if a person has a beard or mustache, don't plot it if it's not clearly visible or of good quality.</li>
+                <li>If hairs are not perfectly visible, don't plot them. Don't plot images with small or unclear hairs.</li>
+                <li>Below are examples of straight, wavy, and curly hairs for reference.</li>
+                <li>You can plot multiple acnes, dark spots at the same time as shown in the examples.</li>
+            </ol>
+            
+            <p>Note: In the website, it won't show the class name. It will only show the plotting box.</p>
+        </section>
+        
+        <section>
+            <h2>Examples of Annotations</h2>
+            <p>Here are some examples of plotting I did. Use these as reference for your annotations:</p>
+            
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/63rCyxzC/000063.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/PfMmHhCj/11775262244-24176c674d-z.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/T1TgbNHF/63v8te2l5qg01.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/zBZnzGwJ/34c9e952-35d6-4e58-bab4-52ad9ee5b7fd.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/J0KJ53fn/67e42c6935fad791fa60608cd14b77b6.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/Dzbr3XXj/9e438c63-9b8e-4de4-824a-19377467a889.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/52rBr36Q/1877565250-jpg-rf-ea1c27b761801b654b41d807bdd00fc2.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/sgxPK8DR/696339637-jpg-rf-4d7500862afc7420fc9d757c530959de.jpg" alt="Annotation example">
+                </div>
+            </div>
+            
+            <h2>Additional Examples</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/bvWWTkxq/0t33n7mqlyte1.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/Ss95tRdC/13332430-7014279-image-a-46-1557482384594.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/HnCKGmvK/394294973-3322214154698655-479825871096716938-n.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/Hn4NdNfL/488808865-583407144751854-3197961397120876730-n.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/zX8M0JgH/genetic-heavy-dark-circles-routine-or-more-v0-duzi12taii6e1.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/K8YWhJQZ/gjgtimgsxh411.jpg" alt="Annotation example">
+                </div>
+                <div class="image-item">
+                    <img src="https://i.postimg.cc/bNg55KxC/iatf7v6q5ef81.jpg" alt="Annotation example">
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p class="credit">Designed by Marena</p>
+        </footer>
+    </div>
+
+          </div></body>
+</html>
